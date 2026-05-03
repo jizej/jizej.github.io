@@ -1,0 +1,21 @@
+<button class="theme-toggle" id="theme-toggle" aria-label="Switch color scheme">
+  <i class="fa-solid fa-palette"></i>
+</button>
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle');
+  var saved = localStorage.getItem('panel-theme');
+  if (saved) document.body.setAttribute('data-theme', saved);
+  btn.addEventListener('click', function() {
+    var current = document.body.getAttribute('data-theme');
+    var next = current === 'slate' ? '' : 'slate';
+    if (next) {
+      document.body.setAttribute('data-theme', next);
+      localStorage.setItem('panel-theme', next);
+    } else {
+      document.body.removeAttribute('data-theme');
+      localStorage.removeItem('panel-theme');
+    }
+  });
+})();
+</script>

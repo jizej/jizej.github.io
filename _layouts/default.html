@@ -5,27 +5,46 @@ layout: compress
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="home-page">
+    {% include theme-toggle.html %}
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    <div class="home" style="background-image: url('{{ base_path }}/images/000034.png')">
 
-    {{ content }}
+      <!-- Floating panel -->
+      <div class="home__panel home__panel--wide">
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
+        <!-- Panel header with nav -->
+        <nav class="panel-nav">
+          <a href="{{ base_path }}/" class="panel-nav__home">Jize Jiang</a>
+          <div class="panel-nav__links">
+            {% for link in site.data.navigation.main %}
+              {% if link.url contains 'http' %}
+                {% assign domain = '' %}
+              {% else %}
+                {% assign domain = base_path %}
+              {% endif %}
+              <a href="{{ domain }}{{ link.url }}" class="panel-nav__link {% if page.url contains link.url and link.url != '/' %}panel-nav__link--active{% endif %}">{{ link.title }}</a>
+            {% endfor %}
+          </div>
+        </nav>
+
+        <!-- Page content -->
+        <div class="panel-page">
+          {{ content }}
+        </div>
+
+      </div>
+
     </div>
 
     {% include scripts.html %}
-
+    {% include footer/custom.html %}
+    {% include page-transitions.html %}
   </body>
 </html>

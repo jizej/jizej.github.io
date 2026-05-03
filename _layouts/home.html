@@ -1,0 +1,176 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="home-page">
+    {% include theme-toggle.html %}
+
+    <div class="home" style="background-image: url('{{ base_path }}/images/{{ page.hero_image | default: 'hero-bg.jpg' }}')">
+
+      <!-- Left Panel (scrollable, floating) -->
+      <div class="home__panel">
+        <div class="home__name-block">
+          <h1 class="home__name">{{ page.display_name | default: site.author.name }}</h1>
+          {% if page.chinese_name %}
+            <p class="home__chinese-name">{{ page.chinese_name }}</p>
+          {% endif %}
+        </div>
+
+        <div class="home__content">
+
+          <!-- Bio (rendered from page content) -->
+          {% if content and content != "" %}
+          <div class="home__bio">
+            {{ content }}
+          </div>
+          {% endif %}
+
+          <!-- Link buttons -->
+          {% if page.panel_links %}
+          <div class="home__links">
+            {% for link in page.panel_links %}
+              {% if link.url contains 'http' %}
+                <a href="{{ link.url }}" class="home__link" target="_blank" rel="noopener">{{ link.title }}</a>
+              {% else %}
+                <a href="{{ base_path }}{{ link.url }}" class="home__link">{{ link.title }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <!-- Publications -->
+          {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+          {% if sorted_pubs.size > 0 %}
+          <div class="home__section">
+            <h2 class="home__section-title">Selected Publications</h2>
+            {% for pub in sorted_pubs %}
+              <a href="{{ base_path }}{{ pub.url }}" class="home__item">
+                <div class="home__item-row">
+                  <span class="home__item-date">{{ pub.date | date: "%Y" }}</span>
+                  <span class="home__item-label">{{ pub.venue }}</span>
+                </div>
+                <div class="home__item-info">
+                  {{ pub.title }}
+                </div>
+              </a>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <!-- Talks (only if any exist) -->
+          {% if site.talks and site.talks.size > 0 %}
+          {% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+          <div class="home__section">
+            <h2 class="home__section-title">Talks</h2>
+            {% for talk in sorted_talks limit:5 %}
+              <a href="{{ base_path }}{{ talk.url }}" class="home__item">
+                <div class="home__item-row">
+                  <span class="home__item-date">{{ talk.date | date: "%b. %d, %Y" }}</span>
+                  <span class="home__item-label">{{ talk.type }}</span>
+                </div>
+                <div class="home__item-info">
+                  {{ talk.title }}<br>
+                  {{ talk.venue }}, {{ talk.date | date: "%Y" }}
+                </div>
+              </a>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <!-- Education (from CV JSON) -->
+          {% if site.data.cv.education.size > 0 %}
+          <div class="home__section">
+            <h2 class="home__section-title">Education</h2>
+            {% for edu in site.data.cv.education %}
+              <div class="home__item">
+                <div class="home__item-row">
+                  <span class="home__item-date">{{ edu.startDate }} – {{ edu.endDate }}</span>
+                  <span class="home__item-label">{{ edu.area }}</span>
+                </div>
+                <div class="home__item-info">
+                  {{ edu.institution }}{% if edu.courses and edu.courses.size > 0 %}<br>{{ edu.courses | join: " &middot; " }}{% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <!-- Service (from CV JSON) -->
+          {% if site.data.cv.service and site.data.cv.service.size > 0 %}
+          <div class="home__section">
+            <h2 class="home__section-title">Professional Service</h2>
+            {% for s in site.data.cv.service %}
+              <div class="home__item">
+                <div class="home__item-row">
+                  <span class="home__item-date">{{ s.role }}</span>
+                  <span class="home__item-label">{{ s.venue }}</span>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <!-- Teaching (only if any exist) -->
+          {% if site.teaching and site.teaching.size > 0 %}
+          {% assign sorted_teaching = site.teaching | sort: 'date' | reverse %}
+          <div class="home__section">
+            <h2 class="home__section-title">Teaching</h2>
+            {% for teach in sorted_teaching limit:5 %}
+              <a href="{{ base_path }}{{ teach.url }}" class="home__item">
+                <div class="home__item-row">
+                  <span class="home__item-date">{{ teach.date | date: "%Y" }}</span>
+                  <span class="home__item-label">{{ teach.type }}</span>
+                </div>
+                <div class="home__item-info">
+                  {{ teach.title }}<br>
+                  {{ teach.venue }}
+                </div>
+              </a>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <!-- Navigation to other pages -->
+          {% if site.data.navigation.main.size > 0 %}
+          <div class="home__nav">
+            {% for link in site.data.navigation.main %}
+              {% if link.url contains 'http' %}
+                {% assign domain = '' %}
+              {% else %}
+                {% assign domain = base_path %}
+              {% endif %}
+              <a href="{{ domain }}{{ link.url }}" class="home__nav-link">{{ link.title }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+        </div>
+      </div>
+
+      <!-- Social Icons -->
+      {% if page.social_icons %}
+      <div class="home__social">
+        {% for icon in page.social_icons %}
+          <a href="{{ icon.url }}" class="home__social-icon" target="_blank" rel="noopener" aria-label="{{ icon.label }}">
+            <i class="{{ icon.icon }}"></i>
+          </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+    </div>
+
+    {% include scripts.html %}
+    {% include footer/custom.html %}
+    {% include page-transitions.html %}
+  </body>
+</html>

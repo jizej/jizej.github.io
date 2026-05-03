@@ -1,152 +1,246 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Jize Jiang",
+    "label": "Ph.D. Student, Computer Science",
+    "email": "jizej2@illinois.edu",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://jizej.github.io",
+    "summary": "Ph.D. student in Computer Science at the University of Illinois Urbana-Champaign, advised by Prof. ChengXiang Zhai. Research interests include memory-augmented agents, post-train scaling for reasoning and tool use in LLM/VLMs, and evaluation and diagnostics for logical reasoning in LLMs.",
     "location": {
       "address": "",
-      "postalCode": "",
-      "city": "Earth",
+      "postalCode": "61801",
+      "city": "Champaign",
       "countryCode": "US",
-      "region": ""
+      "region": "IL"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
+        "username": "Jize Jiang",
         "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
       },
       {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "network": "GitHub",
+        "username": "jizej",
+        "url": "https://github.com/jizej"
       },
       {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "network": "LinkedIn",
+        "username": "Jize Jiang",
+        "url": "https://www.linkedin.com/in/jize-jiang/"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "TIMAN Research Group, University of Illinois Urbana-Champaign",
+      "position": "Graduate Research Assistant",
+      "location": "Champaign, IL",
+      "startDate": "2022",
+      "endDate": "Present",
+      "summary": "Advised by Prof. ChengXiang Zhai. Research on memory-augmented LLM agents, RL post-training for VLM reasoning and tool use, cost-effective VLM inference, knowledge-horizon evaluation, and diagnostic evaluation of logical reasoning in LLMs."
+    },
+    {
+      "name": "Automatic Reasoning Lab, Langboat Inc.",
+      "position": "Research Intern",
+      "location": "Remote",
+      "startDate": "2022-01",
+      "endDate": "2022-05",
+      "summary": "Supervised by Dr. Ming Zhou. Surveyed and benchmarked low-resource semantic parsing and automatic reasoning approaches; built a neural-symbolic reasoning system for the AR-LSAT (Analytical Reasoning section of the Law School Admission Test) that integrates explicit logical rules with end-to-end differentiable training, outperforming baselines on ordering subtasks."
+    },
+    {
+      "name": "Microsoft Research Asia, System Intelligence Group",
+      "position": "Research Intern",
+      "location": "Beijing, China",
+      "startDate": "2021-08",
+      "endDate": "2021-12",
+      "summary": "Mentored by Yaming Yang. Researched transferable graph neural networks; developed ego-graph encoding techniques to produce richer node embeddings for cross-domain generalization; designed and evaluated structural encoding methods for heterogeneous graph settings."
+    },
+    {
+      "name": "Sanmi Koyejo Lab, University of Illinois Urbana-Champaign",
+      "position": "Undergraduate Research Assistant",
+      "location": "Champaign, IL",
+      "startDate": "2020-06",
+      "endDate": "2023-08",
+      "summary": "Mentored by Brando Miranda. Built IsabelleGym, a training and testing environment for automated theorem-proving agents. Worked on meta-learning a position evaluation function for proof complexity minimization. Developed Ultimate-pycoq, an ML interface for the Coq theorem prover."
+    },
+    {
+      "name": "Illinois Risk Lab, University of Illinois Urbana-Champaign",
+      "position": "Undergraduate Research Assistant",
+      "location": "Champaign, IL",
+      "startDate": "2021-03",
+      "endDate": "2022-12",
+      "summary": "Supervised by Dr. Zhiyu Frank Quan. Cleaned and preprocessed 500K business and insurance records; built keyword extraction and text classification models replacing the original rule-based pipeline; developed a question-answering system for risk-related queries over text and numerical sources."
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "University of Illinois Urbana-Champaign",
+      "area": "Ph.D. in Computer Science",
+      "studyType": "Ph.D.",
+      "startDate": "2025",
+      "endDate": "Present",
       "gpa": null,
-      "courses": []
+      "courses": ["Advisor: ChengXiang Zhai"]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
+      "institution": "University of Illinois Urbana-Champaign",
+      "area": "M.S. in Computer Science",
+      "studyType": "M.S.",
+      "startDate": "2023",
+      "endDate": "2025",
       "gpa": null,
-      "courses": []
+      "courses": ["Thesis: Diagnostic Evaluation of Logical Reasoning in LLMs"]
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "institution": "University of Illinois Urbana-Champaign",
+      "area": "B.S. in Mathematics & Computer Science and Statistics",
+      "studyType": "B.S.",
+      "startDate": "2018",
+      "endDate": "2023",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": ["Python", "C++", "Java", "JavaScript", "R", "SAS", "Prolog", "OCaml"]
+    },
+    {
+      "name": "LLM/VLM Training & Tuning",
+      "keywords": ["Fine-tuning", "RL fine-tuning", "Post-training", "Inference-time scaling", "Dataset design/curation", "Evaluation of LLMs / VLMs / VLAs / agentic systems"]
+    },
+    {
+      "name": "Software Development & Research Engineering",
+      "keywords": ["Python package development", "Research infrastructure", "Large-scale preprocessing", "Retrieval/memory systems", "Tool-use pipelines", "Reproducible code release", "Coq/Isabelle theorem-prover integration"]
+    },
+    {
+      "name": "Data & Statistical Analysis",
+      "keywords": ["Statistical analysis", "Temporal & geospatial analysis", "Exploratory analysis", "Data cleaning", "Modeling workflows in Python / R / SAS"]
+    },
+    {
+      "name": "General",
+      "keywords": ["UX/UI design", "Visual design", "Video production/editing", "Technical presentation", "Visual storytelling", "Research communication"]
+    }
+  ],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Memory-augmented agents",
+      "keywords": []
+    },
+    {
+      "name": "Post-train scaling for reasoning and tool use in LLM/VLMs",
+      "keywords": []
+    },
+    {
+      "name": "Evaluation and diagnostics for logical reasoning LLMs",
+      "keywords": []
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "PlugMem: A Task-Agnostic Plugin Memory Module for LLM Agents",
+      "publisher": "ICML 2026",
+      "releaseDate": "2026-02-06",
+      "website": "https://arxiv.org/abs/2603.03296",
+      "summary": "A task-agnostic plugin memory module that attaches to arbitrary LLM agents, structuring raw interactions into a memory graph of propositional facts and prescriptive skills with intent-aware retrieval."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "VTool-R1: VLMs Learn to Think with Images via Reinforcement Learning on Multimodal Tool Use",
+      "publisher": "ICLR 2026",
+      "releaseDate": "2025-05-25",
+      "website": "https://arxiv.org/abs/2505.19255",
+      "summary": "First framework training VLMs to produce multimodal chains of thought by interleaving text with intermediate visual reasoning steps via Python tool invocations, using outcome-based RL without process supervision."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Cache-of-Thought: Master-Apprentice Framework for Cost-Effective Vision Language Model Inference",
+      "publisher": "EMNLP 2025",
+      "releaseDate": "2025-02-27",
+      "website": "https://arxiv.org/abs/2502.20587",
+      "summary": "A master-apprentice framework where a large master VLM generates cached QA pairs retrieved via dual-modality dense retrieval to boost small apprentice VLMs through in-context learning."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "UOUO: Uncontextualized Uncommon Objects for Measuring Knowledge Horizons of Vision Language Models",
+      "publisher": "EMNLP 2024",
+      "releaseDate": "2024-07-25",
+      "website": "https://arxiv.org/abs/2407.18391",
+      "summary": "A scalable benchmark and data curation pipeline for measuring VLM knowledge horizons on uncontextualized uncommon objects from long-tail visual distributions."
+    },
+    {
+      "name": "Competence-Based Analysis of Language Models",
+      "publisher": "NeurIPS 2024 Workshop on Causality and Large Models (CaLM), Oral",
+      "releaseDate": "2023-03-01",
+      "website": "https://arxiv.org/abs/2303.00333",
+      "summary": "A framework for analyzing the competence of language models."
+    },
+    {
+      "name": "Aha Moment Revisited: Are VLMs Truly Capable of Self-Verification in Inference-time Scaling?",
+      "publisher": "Preprint",
+      "releaseDate": "2025-06-20",
+      "website": "https://arxiv.org/abs/2506.17417",
+      "summary": "Systematic evaluation of self-verification capabilities in RL-tuned VLMs during inference-time scaling."
+    },
+    {
+      "name": "Efficient Title Reranker for Fast and Improved Knowledge-Intense NLP",
+      "publisher": "Preprint",
+      "releaseDate": "2023-12-01",
+      "website": "https://arxiv.org/abs/2312.12430",
+      "summary": "An efficient title reranker for fast and improved knowledge-intensive NLP."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
+  "presentations": [],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
+      "course": "CS 357 Numerical Methods I",
+      "institution": "University of Illinois Urbana-Champaign",
+      "date": "",
+      "role": "Teaching Assistant",
       "description": ""
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
+      "course": "CS 450 Numerical Analysis",
+      "institution": "University of Illinois Urbana-Champaign",
+      "date": "",
+      "role": "Teaching Assistant",
+      "description": ""
+    },
+    {
+      "course": "CS 447 Natural Language Processing",
+      "institution": "University of Illinois Urbana-Champaign",
+      "date": "",
+      "role": "Teaching Assistant",
+      "description": ""
+    },
+    {
+      "course": "CS 222 Software Design Lab",
+      "institution": "University of Illinois Urbana-Champaign",
+      "date": "",
+      "role": "Course Assistant",
+      "description": ""
+    },
+    {
+      "course": "CS 173 Discrete Structures",
+      "institution": "University of Illinois Urbana-Champaign",
+      "date": "",
+      "role": "Course Assistant",
+      "description": ""
+    },
+    {
+      "course": "CS 125 Introduction to Computer Science",
+      "institution": "University of Illinois Urbana-Champaign",
+      "date": "",
+      "role": "Course Assistant",
       "description": ""
     }
   ],
-  "portfolio": [
+  "service": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "role": "Reviewer",
+      "venue": "ICML 2026"
     }
-  ]
+  ],
+  "portfolio": []
 }
