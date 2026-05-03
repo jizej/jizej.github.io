@@ -2,7 +2,7 @@
   "basics": {
     "name": "Jize Jiang",
     "label": "Ph.D. Student, Computer Science",
-    "email": "jizej2@illinois.edu",
+    "email": "",
     "phone": "",
     "website": "https://jizej.github.io",
     "summary": "Ph.D. student in Computer Science at the University of Illinois Urbana-Champaign, advised by Prof. ChengXiang Zhai. Research interests include memory-augmented agents, post-train scaling for reasoning and tool use in LLM/VLMs, and evaluation and diagnostics for logical reasoning in LLMs.",
@@ -17,7 +17,7 @@
       {
         "network": "Google Scholar",
         "username": "Jize Jiang",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?hl=en&user=XWw9xbcAAAAJ"
       },
       {
         "network": "GitHub",
@@ -27,7 +27,7 @@
       {
         "network": "LinkedIn",
         "username": "Jize Jiang",
-        "url": "https://www.linkedin.com/in/jize-jiang/"
+        "url": "https://www.linkedin.com/in/jize-jiang-a61627188/"
       }
     ]
   },

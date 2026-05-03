@@ -10,19 +10,16 @@ panel_links:
   - title: "CV"
     url: "/cv/"
   - title: "Google Scholar"
-    url: "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+    url: "https://scholar.google.com/citations?hl=en&user=XWw9xbcAAAAJ"
 social_icons:
-  - icon: "fas fa-envelope"
-    url: "mailto:jizej2@illinois.edu"
-    label: "Email"
   - icon: "fab fa-github"
     url: "https://github.com/jizej"
     label: "GitHub"
   - icon: "fas fa-graduation-cap"
-    url: "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+    url: "https://scholar.google.com/citations?hl=en&user=XWw9xbcAAAAJ"
     label: "Google Scholar"
   - icon: "fab fa-linkedin"
-    url: "https://www.linkedin.com/in/jize-jiang/"
+    url: "https://www.linkedin.com/in/jize-jiang-a61627188/"
     label: "LinkedIn"
 redirect_from:
   - /about/
