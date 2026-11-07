@@ -19,7 +19,7 @@ Education
 
 Research Interests
 ======
-Evaluation and diagnostics of logical reasoning in LLMs; memory-augmented LLM agents; neural&ndash;symbolic systems for reliable decision making; human-centered tools for understanding and steering AI agents.
+Evaluation and diagnostics of logical reasoning in LLMs; memory-augmented LLM agents; post-training scaling for reasoning and tool use in LLMs/VLMs; human-centered tools for understanding and steering AI agents.
 
 Research Experience
 ======
