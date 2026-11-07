@@ -9,6 +9,8 @@ panel_links:
     url: "/publications/"
   - title: "CV"
     url: "/cv/"
+  - title: "CV (PDF)"
+    url: "/files/Jize_Jiang_CV.pdf"
   - title: "Google Scholar"
     url: "https://scholar.google.com/citations?hl=en&user=XWw9xbcAAAAJ"
 social_icons:
@@ -28,6 +30,6 @@ redirect_from:
 
 I am a Ph.D. student in Computer Science at the [University of Illinois Urbana-Champaign](https://illinois.edu/), advised by Prof. [ChengXiang Zhai](https://czhai.cs.illinois.edu/) in the [TIMAN](https://sifaka.cs.illinois.edu/) research group. I received my B.S. in Mathematics & Computer Science and Statistics (2023) and my M.S. in Computer Science (2025) from UIUC. My M.S. thesis, *Diagnostic Evaluation of Logical Reasoning in LLMs*, studied how reliably state-of-the-art LLMs perform genuine deduction.
 
-My research focuses on **memory-augmented agents**, **post-train scaling for reasoning and tool use in LLM/VLMs**, and **evaluation and diagnostics for logical reasoning in LLMs**. Recent work includes [PlugMem](https://arxiv.org/abs/2603.03296) (ICML 2026), [VTool-R1](https://arxiv.org/abs/2505.19255) (ICLR 2026), and [Cache-of-Thought](https://arxiv.org/abs/2502.20587) (EMNLP 2025).
+My research focuses on **evaluation and diagnostics of logical reasoning in LLMs**, **memory-augmented LLM agents**, **neural&ndash;symbolic systems for reliable decision making**, and **human-centered tools for understanding and steering AI agents**. Recent work includes [PlugMem](https://arxiv.org/abs/2603.03296) (ICML 2026, co-first author), [VGI-Bench](https://arxiv.org/abs/2608.19583) (EMNLP 2026), [VTool-R1](https://arxiv.org/abs/2505.19255) (ICLR 2026), and [Cache-of-Thought](https://aclanthology.org/2025.emnlp-main.97/) (EMNLP 2025, co-first author).
 
 Feel free to reach out at **jizej2 [at] illinois [dot] edu**.
